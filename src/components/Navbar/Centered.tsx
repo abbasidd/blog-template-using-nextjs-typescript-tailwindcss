@@ -14,7 +14,7 @@ const CenteredNavbar = ({
   toggleSideMenu,
   openSidebar = false,
   navSetup,
-  onShareClick
+  onShareClick,
 }: iNavbar) => {
   const { navLinks, socials, logo } = navSetup;
 
@@ -118,6 +118,7 @@ const CenteredNavbar = ({
             )
           ) : (
             <NavCatergoryDD
+              key={i}
               label={each.label}
               openDD={openDD}
               setOpenDD={() => setOpenDD(!openDD)}
