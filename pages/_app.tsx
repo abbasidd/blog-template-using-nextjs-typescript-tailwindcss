@@ -45,6 +45,11 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="google-adsense-account"
           content="ca-pub-5417884017876926"
         ></meta>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5417884017876926"
+          crossOrigin="anonymous"
+        ></script>
       </Head>
 
       {env !== "development" ? (
